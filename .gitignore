@@ -1,0 +1,16 @@
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+
+# Office 临时文件
+~$*
+
+# 构建产物（后续生成 PDF/EPUB 时使用）
+dist/
+node_modules/
