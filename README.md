@@ -55,6 +55,19 @@ NiShiSanJi/
 └── 人纪文字实录TXT/           # 五部课程视频同步文字实录（UTF-8）
 ```
 
+## AI 查询 Skill（nishi-sanji）
+
+本仓库自带一个轻量 Agent Skill，安装后可直接用自然语言向 AI 提问，AI 会先检索三纪原文再回答，并给出文件行号出处：
+
+```text
+用倪师三纪查：桂枝汤和麻黄汤怎么区分？
+用倪师三纪查：太阳病发热汗出在第几课怎么讲的？
+```
+
+- Skill 文件：[skills/nishi-sanji/SKILL.md](skills/nishi-sanji/SKILL.md)，检索脚本仅依赖 Python 标准库，无需安装任何包。
+- **安装**：把 `skills/nishi-sanji/` 整个目录复制到 Agent 的 skills 目录即可（Claude Code 为 `~/.claude/skills/`；TRAE 为 `~/.trae-cn/skills/`）。仓库内使用时无需配置；放在仓库外时，在 skill 目录放一个 `corpus-root.txt` 写入本仓库绝对路径，或设置环境变量 `NIHAIXIA_SANJI_ROOT`。
+- Skill 只做课程学习检索，不提供诊断、处方、剂量建议，详见 SKILL.md 中的安全边界。
+
 ## 关于《地纪》
 
 倪师 2012 年辞世时《地纪》只写了序言和极少量开篇，**世上不存在完整版**，详见 [地纪/README.md](地纪/README.md)。
@@ -67,9 +80,10 @@ NiShiSanJi/
 
 ## 后续可做
 
+- [x] 编写 AI 学习助手 skill（[skills/nishi-sanji/](skills/nishi-sanji/SKILL.md)，检索原文并注明文件行号出处）
 - [ ] 生成全仓库合并版 PDF / EPUB（可用 pandoc + typst）
 - [ ] 搭建 GitHub Pages 在线检索页（按分册、药物、方剂、卦名筛选）
 - [ ] 制作《伤寒论》《金匮要略》方剂索引与 Anki 记忆牌组
-- [ ] 编写 AI 学习助手 skill（照原文回答方剂/辨证问题并注明出处）
+- [ ] 为 skill 增加方剂/症状/穴位结构化索引（症状→方剂、药物→篇目）
 
 欢迎提 issue 勘误（错别字、错漏章节、图片缺失）。

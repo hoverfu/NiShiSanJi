@@ -14,3 +14,7 @@ desktop.ini
 # 构建产物（后续生成 PDF/EPUB 时使用）
 dist/
 node_modules/
+
+# skill 安装到仓库外时的本机 corpus 路径配置
+skills/*/scripts/corpus-root.txt
+skills/*/corpus-root.txt
