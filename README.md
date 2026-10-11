@@ -88,4 +88,4 @@ NiShiSanJi/
 
 欢迎提 issue 勘误（错别字、错漏章节、图片缺失）。
 
-📦 想用 AI 直接提问检索三纪？安装与使用方法见 [Issue #1：nishi-sanji Skill 安装指南（Claude Code / Codex / TRAE）](https://github.com/hoverfu/NiShiSanJi/issues/1)。
+📦 想用 AI 直接提问检索三纪？安装与使用方法见置顶 Issue《nishi-sanji Skill 安装指南（Claude Code / Codex / TRAE）》：[Gitee 版](https://gitee.com/hover118/NiShiSanJi/issues/IKKUWT)（国内推荐）｜ [GitHub 版](https://github.com/hoverfu/NiShiSanJi/issues/1)。
