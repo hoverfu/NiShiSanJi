@@ -87,3 +87,5 @@ NiShiSanJi/
 - [ ] 为 skill 增加方剂/症状/穴位结构化索引（症状→方剂、药物→篇目）
 
 欢迎提 issue 勘误（错别字、错漏章节、图片缺失）。
+
+📦 想用 AI 直接提问检索三纪？安装与使用方法见 [Issue #1：nishi-sanji Skill 安装指南（Claude Code / Codex / TRAE）](https://github.com/hoverfu/NiShiSanJi/issues/1)。
